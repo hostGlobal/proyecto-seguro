@@ -1,0 +1,130 @@
+/* Contenedor principal de la sección */
+.evita-fraude {
+  display: flex;           
+  align-items: stretch;     /* Asegura que ambas columnas tengan la misma altura */
+  min-height: 450px;        /* Ajusta el alto mínimo que desees */
+  width: 100%;
+  background-color: #fff;   /* Si quieres un color de fondo global */
+}
+
+/* Columna Izquierda */
+.fraude-left {
+  flex: 1;                  /* Ocupa la mitad del espacio si la otra columna también es flex:1 */
+  overflow: hidden;         /* Evita scroll si la imagen es más grande */
+}
+
+/* Imagen para ocupar todo el alto */
+.fraude-img {
+  width: 100%;         
+  height: 100%;        /* Llena todo el contenedor verticalmente */
+  object-fit: cover;   /* Cubre todo el espacio sin deformar la imagen (recorta si es necesario) */
+  display: block;
+}
+
+/* Columna Derecha: Texto y botones */
+.fraude-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centra verticalmente el contenido */
+  padding: 40px;             /* Ajusta el espacio interior */
+  background-color: #fff;    /* Ajusta si deseas otro color */
+}
+
+/* Título */
+.fraude-right h2 {
+  font-size: 48px;           /* Ajusta a tu gusto (antes era 50px) */
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Párrafos */
+.fraude-right p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Enlaces */
+.fraude-right a {
+  color: #0056a3;
+  text-decoration: none;
+  font-weight: bold;
+}
+.fraude-right a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor de botones */
+.botones-fraude {
+  display: flex;       /* Para que los botones estén uno al lado del otro */
+  gap: 1rem;           /* Espacio entre botones */
+  margin-top: 20px;
+}
+
+/* Botones, versión más pequeña */
+.btn-fraude {
+  background-color: #E3E829;  
+  color: #0033A0;
+  border: none;
+  padding: 0.8rem 2rem;   /* Botones más pequeños que antes */
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;       /* Reduce el tamaño de fuente un poco */
+  transition: background-color 0.3s ease;
+}
+.btn-fraude:hover {
+  background-color: #50c1c9;
+  color: #ffffff;
+}
+
+/* Clases extra */
+.sombreado {
+  font-weight: 600;
+  color: #202020;
+}
+
+.enlace2 {
+  text-decoration: none;
+  color: #1a54d1;
+  font-weight: 500;
+}
+
+/* Responsivo opcional: Si deseas apilar en pantallas más pequeñas */
+@media (max-width: 900px) {
+  .evita-fraude {
+    flex-direction: column;   /* Apila imagen arriba, texto abajo */
+    min-height: auto;         /* Deja que la altura se adapte */
+  }
+  .fraude-left, .fraude-right {
+    width: 100%;
+    height: auto;
+  }
+  /* Ajusta la imagen si quieres que se haga más pequeña */
+  .fraude-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* O contain, si prefieres */
+  }
+  /* Reduce un poco más */
+  .fraude-right {
+    padding: 20px;
+  }
+  .fraude-right h2 {
+    font-size: 32px;
+  }
+  .btn-fraude {
+    font-size: 0.8em;
+    padding: 0.6rem 1.5rem;
+  }
+    /* Cambiamos la dirección de los botones a vertical */
+    .botones-fraude {
+      flex-direction: column;  /* Apila uno debajo del otro */
+      align-items: center;     /* Centra horizontalmente */
+      gap: 1rem;               /* Espacio vertical entre botones */
+    }
+
+}

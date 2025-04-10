@@ -1,0 +1,214 @@
+/* Sección SOAT: contenedor principal */
+.soat-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* O "space-around", según lo que se acerque más al original */
+  background-color: #ccd6ec;
+  padding: 5rem 15rem;
+}
+  
+  /* Contenedor izquierdo */
+  .soat-left {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espacio entre la imagen y la info */
+  }
+  
+  /* Imagen ilustrativa */
+  .soat-image {
+    width: 450px;        /* Ajusta el tamaño que quieras */
+    max-width: 100%;     /* Que no se pase del ancho en pantallas pequeñas */
+    height: auto;        /* Mantiene la proporción */
+    border-radius: 10px;
+  }
+  
+  /* Información de la izquierda */
+  .soat-info {
+    max-width: 300px;    /* Ajusta el ancho máximo de los textos */
+  }
+  
+  .soat-info h2 {
+    font-size: 3em;
+    color: #0563c9;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .soat-info p {
+    margin-bottom: 15px;
+    color: #0563c9;
+  }
+  
+  /* Botón primario de ejemplo */
+  .btn-primary {
+    background-color: #E3E829;  /* Ejemplo: amarillo */
+    color: #0033A0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  /* Mensaje adicional */
+  .tip {
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Lista de bullets */
+  .soat-bullets {
+    list-style: disc;
+    padding-left: 20px;
+    color: #132483;
+  }
+  
+  /* Contenedor derecho (formulario) */
+  .soat-right {
+    background-color: #fff;     /* Fondo blanco para destacar */
+    border-radius: 8px;
+    padding: 20px;
+    height: 20em;
+    min-width: 100px;           /* Ancho mínimo */
+    max-width: 20em;
+    text-align: center;         /* Centrar elementos dentro */
+    box-shadow: 7px 5px 8px rgba(0,0,0,0.1);
+  }
+  
+  .soat-right h3 {
+    margin-bottom: 10px;
+    color: #0056a3;
+    margin-top: 5%;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  
+  /* Etiqueta oculta para accesibilidad (si quieres) */
+  .sr-only {
+    position: absolute;
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0,0,0,0); 
+    border: 0;
+
+  }
+  
+  /* Input para la placa */
+  .placa-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    font-size: 100%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .placa-input {
+    text-transform: uppercase;  /* Para que el texto que escribe el usuario se muestre en mayúsculas */
+  }
+  
+  /* Anular el text-transform para el placeholder */
+  .placa-input::placeholder {
+    text-transform: none; 
+    /* Opcional: color, tamaño, etc. */
+    color: #aaa; 
+  }
+  
+  /* Para compatibilidad con navegadores antiguos, añade prefijos */
+  .placa-input::-webkit-input-placeholder {
+    text-transform: none;
+  }
+  .placa-input:-ms-input-placeholder {
+    text-transform: none;
+  }
+  .placa-input::-ms-input-placeholder {
+    text-transform: none;
+  }
+  
+  /* Botón de cotizar */
+  .btn-cotizar {
+    background-color: #E3E829;  /* Ejemplo: amarillo */
+    color: #0033A0;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 5%;
+    border-radius: 50px;
+  }
+
+  .btn-cotizar:hover {
+    background-color: #50c1c9;  /* Ejemplo: amarillo */
+    color: #ffffff;
+  }
+  
+  .placa-input {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 990px) {
+    .soat-hero {
+      /* Layout vertical (ya lo tienes) */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* Ajusta padding para menos espacio en móviles */
+      padding: 3rem 2rem;
+    }
+  
+    .soat-left,
+    .soat-right {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    /* 1. Ajustar la imagen (reducir ancho y max-width) */
+    .soat-image {
+      width: 80%;         /* Ocupa 80% del contenedor */
+      max-width: 300px;   /* Evita que se vea enorme en pantallas intermedias */
+      margin: 0 auto;
+    }
+  
+    /* 2. Ajustar texto del lado izquierdo (.soat-info) */
+    .soat-info {
+      max-width: 100%;    /* Permite que el texto fluya en todo el ancho */
+    }
+  
+    .soat-info h2 {
+      font-size: 2em;     /* Reduce de 3em (antes) a 2em */
+      margin-bottom: 0.8rem;
+    }
+  
+    .soat-info p {
+      font-size: 14px;    /* Un poco más pequeño */
+      margin-bottom: 1rem;
+    }
+  
+    /* 3. Reducir botón primario (si quieres) */
+    .btn-primary {
+      font-size: 0.9em;   /* Un poco más pequeño que 1em */
+      padding: 8px 16px;  /* En lugar de 10px 20px, para no ocupar tanto */
+    }
+  
+    /* 4. Ajustar contenedor del formulario (soat-right) */
+    .soat-right {
+      max-width: 18em;    /* En lugar de 20em, un poco más reducido */
+      padding: 15px;      /* Menos padding */
+    }
+  
+    /* 5. Ajustar botón "Cotizar" */
+    .btn-cotizar {
+      font-size: 1em;         /* Un poco menor que 1.2em */
+      padding: 0.8rem 3rem;   /* Reduce el padding */
+      margin-top: 2%;         /* Ajusta el espacio superior */
+    }
+  }

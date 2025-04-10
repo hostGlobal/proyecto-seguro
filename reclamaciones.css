@@ -1,0 +1,83 @@
+.reclamaciones {
+    padding: 20px 0;
+    background-color: #fff;
+  }
+  
+  .reclamaciones .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  /* Columna izquierda con ancho fijo */
+  .reclamaciones-left {
+    width: 250px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+  }
+  
+  .reclamaciones-img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    margin: 0;
+  }
+  
+  /* Columna derecha */
+  .reclamaciones-right {
+    flex: 1; 
+  }
+  
+  .reclamaciones-right h2 {
+    font-size: 3rem;
+    color: #0056a3;
+    margin-bottom: 10px;
+  }
+  
+  .reclamaciones-right p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+/* Estilo de enlaces */
+.reclamaciones-right a {
+    color: #0056a3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .reclamaciones-right a:hover {
+    text-decoration: underline;
+  }
+
+  .reclamaciones-hr {
+    border: 0;
+    height: 1px;
+    background-color: #101163;
+    margin: 20px auto 0; /* Ajusta según tu diseño */
+    max-width: 65%;
+  }
+
+  @media (max-width: 650px) {
+    /* Oculta la columna izquierda */
+    .reclamaciones-left {
+      display: none;
+    }
+    /* Ajusta la columna derecha a todo el ancho */
+    .reclamaciones-right {
+      width: 100%;
+    }
+
+    .reclamaciones-right h2 {
+      font-size: 2rem;
+      color: #0056a3;
+      margin-bottom: 10px;
+    }
+  }

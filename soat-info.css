@@ -1,0 +1,95 @@
+/* Sección general (fondo, padding vertical) */
+.soat-info-section {
+    background-color: #f7f6f6; 
+    padding: 30px 0;       /* Espacio arriba/abajo; sin padding lateral */
+  }
+  
+  /* Contenedor interno para controlar ancho y centrar */
+  .soat-info-section .container {
+    max-width: 1200px;     /* Ajusta al ancho deseado */
+    margin: 0 auto;        /* Centra horizontalmente */
+    padding: 0 20px;       /* Espacio lateral (si quieres evitar que pegue en pantallas pequeñas) */
+  
+    display: flex;         /* Flexbox para columnas */
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 20px;             /* Espacio entre .soat-info-left y .soat-info-right */
+  }
+  
+  /* Columna Izquierda */
+  .soat-info-left {
+    flex: 1;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagen */
+  .soat-info-img {
+    max-width: 100%;
+    height: auto;
+    display: block;        /* Para evitar espacios extra de imágenes inline */
+  }
+  
+  /* Columna Derecha */
+  .soat-info-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;             /* Espacio entre título, párrafo y lista */
+    /* background-color: #ebebeb;  <- solo si quieres un fondo gris */
+  }
+  
+  /* Título */
+  .soat-info-right h2 {
+    font-size: 2.5rem;
+    color: #004079;
+    margin-bottom: 10px;
+    font-weight:700;
+  }
+  
+  /* Párrafo */
+  .soat-info-right p {
+    font-size: 16px;
+    color: #707070;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  
+  /* Lista de beneficios */
+  .benefits-list {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 15px;
+  }
+  
+  /* Ítems de la lista */
+  .benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #6b6b6b;
+    line-height: 1.4;
+  }
+  
+  /* Ícono de cada beneficio */
+  .benefit-icon {
+    width: 3rem; 
+    height: auto;
+  }
+  
+  .sombreado {
+    font-weight: 600;
+    color: #747171;
+  }
+
+  .enlace{
+    text-decoration: none;
+    color: #1a54d1;
+    font-weight: 500;
+    cursor: pointer;
+  }

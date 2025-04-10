@@ -1,0 +1,79 @@
+/* Estilos para desktop (más de 900px) */
+.info-bar {
+  background-color: #032da1; /* Azul */
+  padding: 20px 30px;        /* Espacio interno */
+}
+
+/* Lista en línea (desktop) */
+.info-links {
+  list-style: none;
+  display: flex;             /* Enlaces en línea */
+  gap: 20px;                 /* Espacio entre ellos */
+  margin: 0;
+  padding: 0;
+  justify-content: center;   /* Centra horizontalmente */
+}
+
+/* Cada enlace */
+.info-links li a {
+  color: #fff;               /* Texto en blanco */
+  text-decoration: none;     /* Sin subrayado */
+  font-weight: 500;          /* Grosor */
+  font-size: 18px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Efecto hover */
+.info-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Por defecto, ocultamos el botón toggle en desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Media query para pantallas de 900px o menos (móvil) */
+@media (max-width: 900px) {
+  /* Mostrar el botón toggle y ocultar el menú original */
+  .menu-toggle {
+    display: block;             /* Se muestra en móvil */
+    background-color: #032da1;  /* Mismo fondo */
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;           /* Alinea a la izquierda */
+    position: relative;         /* Para posicionar la flecha */
+  }
+
+  /* Agregar una flechita a la derecha del botón toggle */
+  .menu-toggle::after {
+    content: "\25BC";           /* Flecha hacia abajo */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+  }
+
+  /* Oculta la lista original por defecto */
+  .info-links {
+    display: none;              /* Oculto al iniciar */
+    flex-direction: column;     /* Se mostrará en columna */
+    gap: 10px;                  /* Espacio vertical entre enlaces */
+    width: 100%;
+    background-color: #032da1;  /* Mismo fondo de la info-bar */
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 0.5rem;
+  }
+
+  /* Cuando se le agregue la clase 'active', se muestra */
+  .info-links.active {
+    display: flex;
+  }
+}

@@ -1,0 +1,134 @@
+.ten-en-cuenta {
+    background-color: #fff;     /* Ajusta según tu diseño */
+    padding: 40px 0;           /* Espacio vertical */
+  }
+  
+  .ten-en-cuenta .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .ten-en-cuenta h2 {
+    font-size: 24px;
+    color: #0056a3;  /* Azul SURA, por ejemplo */
+    margin-bottom: 20px;
+  }
+  
+  .lista-icones {
+    display: flex;
+    flex-direction: column; /* Apila verticalmente */
+    gap: 20px;             /* Espacio entre ítems */
+  }
+  
+  .lista-icones li {
+    display: flex;                /* Ícono y texto en la misma fila */
+    align-items: flex-start;      /* Alinea el ícono arriba si es más alto */
+    gap: 10px;                    /* Espacio entre ícono y texto */
+    background-color: #f0f0f0;       /* Fondo gris */
+    padding: 1rem;                /* Relleno interno */
+    border-radius: 30px;           /* Esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra opcional */
+    padding: 1.3rem;
+  }
+  
+  
+  .icono-lista {
+    width: 32px;   /* Ajusta el tamaño del ícono */
+    height: auto;
+    flex-shrink: 0; /* Evita que el ícono se encoja */
+  }
+  
+  .lista-icones p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Subtítulo de la sección */
+  .ten-en-cuenta h3 {
+    font-size: 20px;
+    color: #23acc4;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  /* Bloque de información de contacto */
+  .info-contacto p {
+    margin-bottom: 10px; /* Espacio entre párrafos */
+    color: #333;         /* Texto en gris oscuro (o negro) */
+    line-height: 1.5;    /* Altura de línea para mejor legibilidad */
+  }
+
+  .info-contacto strong {
+    color: #20a2b9;      /* Azul consistente para todo el texto en <strong> */
+    font-weight: bold;   /* Asegura negrita */
+  }
+
+  @media (max-width: 650px) {
+    /* Reduce el padding general de la sección "ten en cuenta" */
+    .ten-en-cuenta {
+        padding: 20px 0;
+    }
+    
+    /* Ajusta el contenedor para aprovechar menos el ancho (ajusta si es necesario) */
+    .ten-en-cuenta .container {
+        padding: 0 10px;
+    }
+    
+    /* Títulos se reducen ligeramente en tamaño */
+    .ten-en-cuenta h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .ten-en-cuenta h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    /* La lista de íconos se mantiene en columna con menor espacio entre ítems */
+    .lista-icones {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Cada ítem de la lista (los cuadros grises) se reduce en padding y se suaviza el border-radius */
+    .lista-icones li {
+        padding: 1rem;
+        gap: 8px;
+        border-radius: 20px;
+        /* Si deseas ajustar el tamaño de la sombra, puedes hacerlo aquí */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Reducir el tamaño de fuente de los textos dentro de cada ítem */
+    .lista-icones p {
+        font-size: 14px;
+    }
+
+    /* Subtítulo de la sección */
+  .ten-en-cuenta h3 {
+    font-size: 0.9rem;
+    color: #23acc4;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  /* Bloque de información de contacto */
+  .info-contacto p {
+    margin-bottom: 10px; /* Espacio entre párrafos */
+    color: #333;         /* Texto en gris oscuro (o negro) */
+    line-height: 1.5;    /* Altura de línea para mejor legibilidad */
+    font-size: 0.9rem;
+  }
+
+  .info-contacto strong {
+    color: #20a2b9;      /* Azul consistente para todo el texto en <strong> */
+    font-weight: bold;   /* Asegura negrita */
+    font-size: 0.9rem;
+  }
+  }
+  
