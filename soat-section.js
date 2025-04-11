@@ -31,7 +31,7 @@ function validarPlaca(placa) {
     }
   
     // 4. Definimos el número de WhatsApp (con código de país)
-    var telefono = "573014200329"; // Ajusta con tu número real
+    var telefono = "573003642841"; // Ajusta con tu número real
   
     // 5. Construimos el mensaje
     var mensaje = "Hola, quiero cotizar el SOAT para la placa: " + placa;

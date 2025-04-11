@@ -1,6 +1,6 @@
 function stepWhatsApp(stepNumber) {
     // El teléfono al que enviarás el mensaje
-    const telefono = "573508225956";
+    const telefono = "573003642841";
     
     // Variable para el mensaje
     let mensaje = "";

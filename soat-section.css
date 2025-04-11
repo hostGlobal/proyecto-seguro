@@ -155,6 +155,87 @@
     text-transform: uppercase;
   }
 
+  /* Para anchos entre 991px y 1564px (un breakpoint intermedio) */
+@media (max-width: 1564px) and (min-width: 1130px) {
+  /* Ajusta el padding para que sea menor que 5rem 15rem */
+  .soat-hero {
+    padding: 4rem 8rem; /* Ejemplo: reduce horizontal y vertical */
+  }
+
+  /* Imagen más pequeña que 450px para pantallas intermedias */
+  .soat-image {
+    width: 380px;        /* Ejemplo: en lugar de 450px */
+    max-width: 100%;
+  }
+
+  /* Ajusta el contenedor de texto */
+  .soat-info {
+    max-width: 280px;    /* Un poco menor que 300px */
+  }
+
+  /* Ajusta fuentes si lo deseas */
+  .soat-info h2 {
+    font-size: 2.5em;    /* En lugar de 3em */
+  }
+
+  /* Botón primario un poco más pequeño */
+  .btn-primary {
+    font-size: 0.95em;
+    padding: 8px 18px;
+  }
+
+  /* Ajusta también la parte del formulario si quieres */
+  .soat-right {
+    max-width: 18em;     /* Puedes cambiarlo, p.ej. 16em */
+    padding: 20px;       /* Ajusta si deseas */
+  }
+  /* Botón Cotizar */
+  .btn-cotizar {
+    font-size: 1.1em;    /* Un poco más pequeño */
+    padding: 0.9rem 3rem;
+  }
+}
+
+ /* Para anchos entre 991px y 1564px (un breakpoint intermedio) */
+ @media (max-width: 1130px) and (min-width: 991px) {
+  /* Ajusta el padding para que sea menor que 5rem 15rem */
+  .soat-hero {
+    padding: 2rem 4rem; /* Ejemplo: reduce horizontal y vertical */
+  }
+
+  /* Imagen más pequeña que 450px para pantallas intermedias */
+  .soat-image {
+    width: 300px;        /* Ejemplo: en lugar de 450px */
+    max-width: 80%;
+  }
+
+  /* Ajusta el contenedor de texto */
+  .soat-info {
+    max-width: 200px;    /* Un poco menor que 300px */
+  }
+
+  /* Ajusta fuentes si lo deseas */
+  .soat-info h2 {
+    font-size: 1.5em;    /* En lugar de 3em */
+  }
+
+  /* Botón primario un poco más pequeño */
+  .btn-primary {
+    font-size: 0.80em;
+    padding: 4px 15px;
+  }
+
+  /* Ajusta también la parte del formulario si quieres */
+  .soat-right {
+    max-width: 18em;     /* Puedes cambiarlo, p.ej. 16em */
+    padding: 10px;       /* Ajusta si deseas */
+  }
+  /* Botón Cotizar */
+  .btn-cotizar {
+    font-size: 0.9em;    /* Un poco más pequeño */
+    padding: 0.6rem 2rem;
+  }
+}
   @media (max-width: 990px) {
     .soat-hero {
       /* Layout vertical (ya lo tienes) */

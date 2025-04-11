@@ -1,6 +1,6 @@
 function navItemWhatsApp(itemKey) {
     // Teléfono
-    const telefono = "573014200329"; // Ajusta a tu número
+    const telefono = "573003642841"; // Ajusta a tu número
     
     // El mensaje que vas a enviar
     let mensaje = "";

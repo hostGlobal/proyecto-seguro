@@ -11,11 +11,11 @@ function renderEvitaFraude() {
       <div class="fraude-right">
         <h2>Evita el fraude</h2>
         <p>
-          Hay personas malintencionadas que ofrecen el SOAT con descuento por WhatsApp, SMS o redes sociales. Asimismo, 
-          solicitan que el pago sea mediante tarjetas de crédito. <span class="sombreado">Todo esto es fraude. ¡No caigas!</span>
+          Existen personas malintencionadas que ofrecen el SOAT con descuentos exorbitantes y exigen que el pago se realice mediante tarjeta de crédito.
+          <span class="sombreado">¡No caigas!</span>
         </p>
         <p>
-          Compra tu SOAT por Suraenlinea.com con total asesoría. <a class="enlace2" href="#">Conoce más.</a>
+          Adquiere tu SOAT de forma segura y con asesoría de profesionales. <a class="enlace2" href="#">Conoce más.</a>
         </p>
         <div class="botones-fraude">
           <button class="btn-fraude" onclick="verTarifas()">Ver tarifas</button>
