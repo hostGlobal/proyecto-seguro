@@ -22,7 +22,7 @@
 
   <!-- Contenedor derecho: formulario para cotizar -->
   <div class="soat-right">
-    <h3>Tu <strong>SOAT</strong> 100% digital</h3>
+    <h3>Tu <strong>SOAT</strong> 200% digital</h3>
     <label for="placa" class="sr-only">Ingresa tu placa</label>
     <input type="text" id="placa" class="placa-input" placeholder="Ingresa tu placa">
     <button class="btn-cotizar" onclick="enviarWhatsApp()">Cotizar</button>
