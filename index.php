@@ -100,7 +100,7 @@ renderNavbar(1); // Este es el paso actual (1 = Cotización)
       
   // Enviar WhatsApp sin placa (mensaje genérico)
 function enviarWhatsAppSinPlaca() {
-    const telefono = "573507335603"; // Reemplaza con tu número real
+    const telefono = "573003642841"; // Reemplaza con tu número real
     const mensaje = "Hola, estoy interesado en comprar el SOAT. ¿Podrías ayudarme?";
     const url = "https://api.whatsapp.com/send?phone=" + telefono + "&text=" + encodeURIComponent(mensaje);
     window.open(url, "_blank");

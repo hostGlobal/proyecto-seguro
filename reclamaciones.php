@@ -5,7 +5,7 @@ function renderReclamaciones() {
       <div class="container">
         <!-- Columna Izquierda: Imagen -->
         <div class="reclamaciones-left">
-          <img src="images/lionn.png" alt="Mascota" class="reclamaciones-img">
+          <img src="images/logo2.png" alt="Mascota" class="reclamaciones-img">
         </div>
 
         <!-- Columna Derecha: Texto -->
